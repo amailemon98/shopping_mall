@@ -1,10 +1,14 @@
 import React from "react";
+import Header from "./header/Header";
+import Body from "./body/Body";
+import Footer from "./footer/Footer";
 
 const MainPage = () => {
   return (
     <div>
-      {/* 헤더 바디 푸터 추가할 예정 */}
-      메인 페이지 입니다.
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 };
