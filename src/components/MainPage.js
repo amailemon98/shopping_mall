@@ -5,7 +5,7 @@ import Footer from "./footer/Footer";
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="w-full h-full">
       <Header />
       <Body />
       <Footer />
