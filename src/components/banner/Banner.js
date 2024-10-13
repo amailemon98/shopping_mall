@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import BannerImageLayout from "../BannerImageLayout";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -8,17 +7,17 @@ const Banner = (props) => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      slidesToSlide: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
   };
   return (
@@ -28,12 +27,11 @@ const Banner = (props) => {
       draggable={true}
       showDots={false}
       responsive={responsive}
-      ssr={false} // means to render carousel on server-side.
+      ssr={false}
       infinite={true}
       autoPlay={props.deviceType !== "mobile" ? true : false}
       autoPlaySpeed={3000}
       keyBoardControl={true}
-      // customTransition="all .5"
       transitionDuration={500}
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}

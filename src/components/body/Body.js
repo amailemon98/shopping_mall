@@ -12,7 +12,7 @@ const Body = () => {
   return (
     <div>
       <div className="w-full h-full">
-        <div className="w-full h-full mx-auto pt-16">
+        <div className="w-full h-full mx-auto">
           <div className="w-full h-[90%] m-auto">
             <Routes>
               <Route path="/" element={<Home />} />

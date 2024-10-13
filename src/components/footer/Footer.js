@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer className="h-64 bg-gray-600 w-full flex flex-col justify-center items-center">
       <div className="flex font-bold text-xl text-slate-400 gap-5">
-        {/* Home, Contact, Terms of Service, Privacy Policy, IQ Test */}
         <div className="hover:text-slate-500">
           <Link to={"/"}>Home</Link>
         </div>
@@ -20,11 +19,7 @@ const Footer = () => {
           <Link to={"login"}>Login</Link>
         </div>
       </div>
-      <div className="h-[20%] w-[50%] gap-10 flex justify-center items-center">
-        {/* <BtnTwitter />
-    <BtnFacebook />
-    <BtnNaver /> */}
-      </div>
+      <div className="h-[20%] w-[50%] gap-10 flex justify-center items-center"></div>
       <div>
         <p
           className="cursor-pointer text-center text-lg text-slate-400 font-bold"
@@ -32,21 +27,17 @@ const Footer = () => {
             setOpenInfo(!openInfo);
           }}
         >
-          Business Information
+          Information
         </p>
 
         {openInfo && (
           <div className="text-center text-sm text-slate-500 font-bold">
             <p>이준형 서경하</p>
-            <p>준경 사업</p>
-            <p>amailemon98@naver.com</p>
-            <p>zxd87@naver.com</p>
+            <p>준경팀</p>
           </div>
         )}
       </div>
-      <div className="text-lg text-slate-500 font-bold">
-        ⓒ2024 Copyright 준경팀, All rights reserved.
-      </div>
+      <div className="text-lg text-slate-500 font-bold">준경팀</div>
     </footer>
   );
 };
